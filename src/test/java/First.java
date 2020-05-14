@@ -5,6 +5,8 @@ import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.opera.OperaDriver;
 
+import java.util.concurrent.TimeUnit;
+
 public class First {
 
     String SITE_URL = "https://mvnrepository.com/";
@@ -15,6 +17,8 @@ public class First {
      public void start (){
         WebDriverManager.operadriver().setup();
         driver = new OperaDriver();
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
 //        System.out.println("before each test");
     }
