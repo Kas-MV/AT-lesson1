@@ -7,26 +7,9 @@ import org.openqa.selenium.opera.OperaDriver;
 
 import java.util.concurrent.TimeUnit;
 
-public class First {
+public class First extends TestBase{
 
-    String SITE_URL = "https://mvnrepository.com/";
 
-    WebDriver driver;
-
-    @BeforeEach
-     public void start (){
-        WebDriverManager.operadriver().setup();
-        driver = new OperaDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-
-//        System.out.println("before each test");
-    }
-
-    @AfterEach
-    public void finish(){
-        driver.quit();
-    }
 
     @Test
     public void firstTest (){
@@ -36,6 +19,7 @@ public class First {
 
     @Test
     public void secondTest (){
+        driver.get(SITE_URL);
 
     }
 }
