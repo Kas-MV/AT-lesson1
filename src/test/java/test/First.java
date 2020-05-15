@@ -12,16 +12,17 @@ import java.util.concurrent.TimeUnit;
 public class First extends TestBase {
 
 
-
     @Test
-    public void firstTest (){
-        driver.get(SITE_URL);
+    public void firstTest() {
+        main    .goTo()
+                .chooseTask("1");
+
+        taskOne.checkPageIsCorrect();
 
     }
 
     @Test
-    public void secondTest (){
-        driver.get(SITE_URL);
+    public void secondTest() {
 
     }
 }

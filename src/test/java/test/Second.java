@@ -6,14 +6,12 @@ public class Second extends TestBase {
 
 
     @Test
-    public void firstTest (){
-        driver.get(SITE_URL);
+    public void firstTest() {
 
     }
 
     @Test
-    public void secondTest (){
-        driver.get(SITE_URL);
+    public void secondTest() {
 
     }
 }
