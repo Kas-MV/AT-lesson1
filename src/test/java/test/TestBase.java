@@ -26,6 +26,7 @@ public class TestBase {
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         main = PageFactory.initElements(driver, Main.class);
         taskOne = PageFactory.initElements(driver, TaskOne.class);
+        taskSix = PageFactory.initElements(driver, TaskSix.class);
 
 //        System.out.println("before each test");
     }
