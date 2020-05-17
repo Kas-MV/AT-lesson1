@@ -18,7 +18,7 @@ public class TaskSix extends BasePage {
     }
 
     public TaskSix fillInPassword(String password) {
-        writeText(By.id("LoginForm[_password]"), password);
+        writeText(By.name("LoginForm[_password]"), password);
         return this;
 
     }

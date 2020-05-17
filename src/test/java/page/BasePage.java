@@ -37,7 +37,7 @@ public class BasePage {
         waitVisibility(elementBy);
         WebElement element = driver.findElement(elementBy);
         element.clear();
-        element.sendKeys();
+        element.sendKeys(text);
     }
 
 }
